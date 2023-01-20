@@ -1,0 +1,25 @@
+// Override default variables before the import
+
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&display=swap');
+
+$primary: white;
+$secondary: #1D1842;
+$danger: #8E0D3C;
+$info: #EF3B33;
+$warning: #FDA1A2;
+
+body {
+    font-family: 'Playfair Display', serif !important;
+  }
+
+$body-bg:$danger;
+
+.vl {
+    border-left: 4px solid #EF3B33;
+    height: 100px;
+    margin-left: 50%;
+}
+
+// Import Bootstrap and its default variables
+@import '~bootstrap/scss/bootstrap.scss';

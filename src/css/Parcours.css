@@ -1,0 +1,38 @@
+.parcours-wrapper{
+    opacity: 0;
+    animation: parcours_wrapper 1s;
+    animation-fill-mode: forwards;
+}
+
+.parcours-wrapper:nth-child(2){
+    opacity: 0;
+    animation-delay: 0.2s;
+}
+.parcours-wrapper:nth-child(3){
+    opacity: 0;
+    animation-delay: 0.4s;
+}
+.parcours-wrapper:nth-child(4){
+    opacity: 0;
+    animation-delay: 0.6s;
+}
+.parcours-wrapper:nth-child(5){
+    opacity: 0;
+    animation-delay: 0.8s;
+}
+.parcours-wrapper:nth-child(6){
+    opacity: 0;
+    animation-delay: 1s;
+}
+
+@keyframes parcours_wrapper{
+    0%{
+        transform: translateY(50px);
+    }
+    50%{
+        transform: translateY(-10px);
+    }
+    100% {
+        opacity: 100%;
+    }
+}

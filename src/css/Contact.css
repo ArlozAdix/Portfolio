@@ -1,0 +1,34 @@
+.contact-wrapper{
+    opacity: 0;
+    animation: contact_wrapper 1s;
+    animation-fill-mode: forwards;
+}
+
+.contact-wrapper:nth-child(2){
+    opacity: 0;
+    animation-delay: 0.2s;
+}
+.contact-wrapper:nth-child(3){
+    opacity: 0;
+    animation-delay: 0.4s;
+}
+.contact-wrapper:nth-child(4){
+    opacity: 0;
+    animation-delay: 0.6s;
+}
+
+@keyframes contact_wrapper{
+    0%{
+        transform: translateY(50px);
+    }
+    50%{
+        transform: translateY(-10px);
+    }
+    100% {
+        opacity: 100%;
+    }
+}
+
+.full-height{
+    height: 100%;
+}
