@@ -1,8 +1,11 @@
 import React from 'react'
+
+import Competences from '../Competences/Competences'
+
 import '../../css/Parcours.css'
-import fruit from '../../images/fruit.png'
-import projet from '../../images/projet.png'
-import etude from '../../images/etude.png'
+import fruit from '../../images/fruitW.png'
+import projet from '../../images/projetW.png'
+import etude from '../../images/etudeW.png'
 
 export default function Parcours() {
 
@@ -46,25 +49,29 @@ export default function Parcours() {
 ]
 
   return (
-    <div>
-        <h1 className='text-primary text-center mt-5 fst-italic'> Mon parcours </h1>
-        {experiences.slice(0).reverse().map((experience) => {
-            return <div className='parcours-wrapper'>
-                        <div className='card mt-5 col-lg-6 mx-auto shadow text-white bg-secondary border  border-3 border-info'key={experience.id}>
-                            <div class="card-header">
-                                <p className='card-text fs-5'>{experience.date}</p>
-                            </div>
-                            <div className='d-flex'>
-                                <div className='card-body'>
-                                    <h3 className='card-title text-warning fs-2'>{experience.companyName}</h3>
-                                    <h4 className='card-subtitle text-warning mb-2 fs-3'>{experience.postName}</h4>
-                                    <p className='mt-4 card-text fs-4'>{experience.skills}</p>
+    <div className='d-flex justify-content-around'>
+        <div className='col-2'/>
+        <div className='col-5'>
+            <h1 className='text-primary text-center mt-5 fst-italic'> Mon parcours </h1>
+            {experiences.slice(0).reverse().map((experience) => {
+                return <div className='parcours-wrapper'>
+                            <div className='card mt-5 shadow text-white bg-secondary border border-3 border-info'key={experience.id}>
+                                <div class="card-header">
+                                    <p className='card-text fs-5'>{experience.date}</p>
                                 </div>
-                                <img className="d-none d-lg-block p-3" width={300} height={300} src={experience.logo} alt='' />
+                                <div className='d-flex'>
+                                    <div className='card-body'>
+                                        <h3 className='card-title text-warning fs-2'>{experience.companyName}</h3>
+                                        <h4 className='card-subtitle text-warning mb-2 fs-3'>{experience.postName}</h4>
+                                        <p className='mt-4 card-text fs-4'>{experience.skills}</p>
+                                    </div>
+                                    <img className="d-none d-lg-block p-3" width={300} height={300} src={experience.logo} alt='' />
+                                </div>
                             </div>
-                        </div>
-            </div>
-        })}
+                </div>
+            })}
+        </div>
+        <Competences/>
     </div>
   )
 }

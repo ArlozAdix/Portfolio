@@ -12,7 +12,7 @@ function App() {
     <div class="bg-image">
       <Navbar />
       <Routes>
-        <Route path='/' element={<Projets />} />
+        <Route path='/portfolio' element={<Projets />} />
         <Route path='/parcours' element={<Parcours />} />
         <Route path='/contact' element={<Contact />} />
       </Routes>
