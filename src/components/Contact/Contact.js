@@ -10,9 +10,9 @@ export default function Contact() {
   return (
     <div style={{height: '100vh'}} >
         <h1 className='text-primary text-center mt-5 fst-italic'> Me contacter </h1>
-        <div className=' border border-3 border-info contact-wrapper rounded-5 bg-secondary col-xl-8  mx-auto  mt-5 d-flex align-items-center'>
-            <img className='d-none d-lg-block m-3 border border-3 border-warning rounded-circle' src={photo} width={300} height={300} alt=''/>
-            <div className=' ms-5 text-white fs-3'>
+        <div className=' border border-3 border-info contact-wrapper rounded-5 bg-secondary col-xl-6  mx-auto  mt-5 d-flex align-items-center'>
+            <img className='d-none d-lg-block m-3 border border-3 border-warning rounded-circle' src={photo} width={250} height={250} alt=''/>
+            <div className=' ms-5 text-white fs-5'>
                 <div className='d-flex mt-3 '>
                     <img className='d-none d-lg-block me-3' src={localisation} width={50} height={50} alt='' />
                     <p className='text-wrap'> 16 Cours Senozan, 38500 Voiron</p>

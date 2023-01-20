@@ -50,28 +50,28 @@ export default function Parcours() {
 
   return (
     <div className='d-flex justify-content-around'>
-        <div className='col-2'/>
-        <div className='col-5'>
+        <div className='col-2 d-none d-xl-block' />
+        <div className='col-xl-5'>
             <h1 className='text-primary text-center mt-5 fst-italic'> Mon parcours </h1>
             {experiences.slice(0).reverse().map((experience) => {
                 return <div className='parcours-wrapper'>
                             <div className='card mt-5 shadow text-white bg-secondary border border-3 border-info'key={experience.id}>
                                 <div class="card-header">
-                                    <p className='card-text fs-5'>{experience.date}</p>
+                                    <p className='card-text'>{experience.date}</p>
                                 </div>
                                 <div className='d-flex'>
                                     <div className='card-body'>
-                                        <h3 className='card-title text-warning fs-2'>{experience.companyName}</h3>
-                                        <h4 className='card-subtitle text-warning mb-2 fs-3'>{experience.postName}</h4>
-                                        <p className='mt-4 card-text fs-4'>{experience.skills}</p>
+                                        <h3 className='card-title text-warning'>{experience.companyName}</h3>
+                                        <h4 className='card-subtitle text-warning mb-2'>{experience.postName}</h4>
+                                        <p className='mt-4 card-text'>{experience.skills}</p>
                                     </div>
-                                    <img className="d-none d-lg-block p-3" width={300} height={300} src={experience.logo} alt='' />
+                                    <img className="d-none d-lg-block p-3" width={200} height={200} src={experience.logo} alt='' />
                                 </div>
                             </div>
                 </div>
             })}
         </div>
-        <Competences/>
+        <Competences />
     </div>
   )
 }

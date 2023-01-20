@@ -6,6 +6,7 @@ import Parcours from './components/Parcours/Parcours';
 import Contact from './components/Contact/Contact';
 
 import './css/App.css';
+import Footer from './components/Footer/Footer';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path='/parcours' element={<Parcours />} />
         <Route path='/contact' element={<Contact />} />
       </Routes>
+      <Footer />
     </div>
   );
 }
