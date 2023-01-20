@@ -1,20 +1,8 @@
 .carousel-wrapper{
     opacity: 0;
     animation: carousel_wrapper 1s;
-    animation-fill-mode: forwards;
-}
-
-.carousel-wrapper:nth-child(2){
-    opacity: 0;
-    animation-delay: 0.2s;
-}
-.carousel-wrapper:nth-child(3){
-    opacity: 0;
     animation-delay: 0.4s;
-}
-.carousel-wrapper:nth-child(4){
-    opacity: 0;
-    animation-delay: 0.6s;
+    animation-fill-mode: forwards;
 }
 
 @keyframes carousel_wrapper{

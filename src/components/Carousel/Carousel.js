@@ -8,7 +8,7 @@ import '../../css/Carousel.css'
   
   export default function Carousel() {
     return (
-        <div style={{height: '100vh'}}>
+        <div >
             <h1 className='text-primary text-center mt-5 fst-italic'> Apercu de mes projets </h1>
             <MDBCarousel className='carousel-wrapper shadow w-50 border border-3  border-info mx-auto mt-5' dark showIndicators showControls>
                 <MDBCarouselItem
